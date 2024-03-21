@@ -22,12 +22,12 @@ export function Main({ children }: { children: React.ReactNode }) {
         <br />
         <div style={{ display: isMobile ? 'block' : 'flex', margin: isMobile ? '0 auto' : '' }}>
           <img style={{
-              width: '50%',
+              width: isMobile ? '100%' : '50%',
               height: 'auto' 
             }} 
           src="https://sports.skymas.mx/dtc/imagenes/aplicacion/v2/img-bg-movil.png" alt="logo-sky"/>
           <div style={{
-            width: '50%'
+            width: isMobile ? '100%' : '50%'
           }}>{children}</div>
         </div>        
       </>
