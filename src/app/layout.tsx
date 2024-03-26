@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Main } from "./UIComponents/main";
-import { Header } from "./UIComponents/header";
-import { Footer } from "./UIComponents/footer";
+import { Main } from "./main";
+import { Header } from "./header";
+import { Footer } from "./footer";
 import localFont from 'next/font/local';
 
 const SkyText = localFont({

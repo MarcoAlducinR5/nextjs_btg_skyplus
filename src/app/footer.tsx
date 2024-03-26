@@ -1,7 +1,8 @@
 "use client"; 
 import { useEffect, useState } from 'react';
-import footerLogos from '../../img/aplicacion/v2/footer_logos.png';
-import footerLogos2 from '../../img/aplicacion/v2/footer_logos2.png';
+import footerLogos from '../img/aplicacion/v2/footer_logos.png';
+import footerLogos2 from '../img/aplicacion/v2/footer_logos2.png';
+import lineaSpectrum from '../img/aplicacion/v2/linea-spectrum.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -24,24 +25,27 @@ export function Footer() {
 
     return (
       <>
-         <div style={{
-          background:'blue',
-          height: '10px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}/>
+            <Image src={lineaSpectrum} alt="navInferior" id="navInferior" 
+              style={{ 
+                /* margin: '0.2rem 0rem',
+                padding: '0.2rem', */
+                width: '100%',
+                height: 'auto',
+              }}
+            />
 
             {isMobile ? 
               <Image src={footerLogos2} alt="imgFt" id="imgFt" 
                 style={{ 
                   width: '100%',
+                  height: 'auto',
                 }}
               />
             : 
             <Image src={footerLogos} alt="imgFtMovil" id="imgFtMovil"  
               style={{ 
                 width: '100%',
+                height: 'auto',
               }} 
             />}
         <div style={{
@@ -74,6 +78,14 @@ export function Footer() {
                 </p>      
             </Link>    
           </div>
+          <style jsx>{`
+            .navInferior {
+              margin: 0.2rem 0rem;
+              padding: 0.3rem;
+              width: 100%;
+              background-image: url(../img/aplicacion/v2/linea-spectrum.png)!important;
+            }
+        `}</style>
       </>
     );
 }

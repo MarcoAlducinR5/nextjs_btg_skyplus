@@ -1,7 +1,7 @@
 "use client"; 
 import { useEffect, useState } from 'react';
-import imgBgDesk from '../../img/aplicacion/v2/img-bg-desk-3x.png';
-import imgBgMovil from '../../img/aplicacion/v2/img-bg-movil.png';
+import imgBgDesk from '../img/aplicacion/v2/img-bg-desk-3x.png';
+import imgBgMovil from '../img/aplicacion/v2/img-bg-movil.png';
 import Image from 'next/image';
 
 export function Main({ children }: { children: React.ReactNode }) {
