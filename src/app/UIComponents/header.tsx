@@ -1,5 +1,8 @@
 "use client";
 import { useEffect, useState } from 'react';
+import logo from '../../img/logo.svg';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function Header() {  
 
@@ -20,6 +23,7 @@ export function Header() {
 
     return (
       <>
+        <div className="navSuperior"></div>
         <div style={{
           background: '#F9FBFC',
           height: '4px',
@@ -32,21 +36,21 @@ export function Header() {
           justifyContent: isMobile ? 'center' : 'space-between', // Ajusta el margen vertical
           
         }}>
-          <img 
-          src="https://sports.skymas.mx/dtc/imagenes/logo.svg" alt="React Image" 
+          <Image 
+           src={logo} alt="sky-logo1" id="logo_nav_sky"  
           style={
             { 
               margin:'12px 12px 12px 60px', 
               marginLeft: isMobile ? '0' : '60px',
             }} />
           
-          <a style={{
+          <Link style={{
              textDecoration: "none",
              color: "inherit",
              margin:'12px 60px 12px 12px', // Ajusta el margen vertical
              display: isMobile ? 'none' : 'flex'
           }}
-          href="https://dtc.custhelp.com/app/answers/list" target="_blank">Centro de ayuda</a>
+          href="https://dtc.custhelp.com/app/answers/list" target="_blank">Centro de ayuda</Link>
 
         </div>
         <div style={{
@@ -55,6 +59,13 @@ export function Header() {
           display: isMobile ? 'none' : 'flex'
         }}>          
         </div>
+        <style jsx>{`
+            .navSuperior {
+                height: 0.2rem;
+                width: 100%;
+                background: linear-gradient(90deg, #ff9e00 0%, #ff0000 33.93%, #b5007d 58.36%, #21429c 82.54%, #0071ff 100%);
+            }
+        `}</style>
       </>
     );
 }

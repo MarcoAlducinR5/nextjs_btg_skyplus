@@ -1,10 +1,14 @@
 "use client"; 
 import { useEffect, useState } from 'react';
+import footerLogos from '../../img/aplicacion/v2/footer_logos.png';
+import footerLogos2 from '../../img/aplicacion/v2/footer_logos2.png';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function Footer() {
 
     const [isMobile, setIsMobile] = useState(false);
-
+    
     useEffect(() => {
       const handleResize = () => {
         setIsMobile(window.innerWidth <= 768);
@@ -28,12 +32,18 @@ export function Footer() {
           alignItems: 'center'
         }}/>
 
-           <img 
-          src="https://sports.skymas.mx/dtc/imagenes/aplicacion/v2/footer_logos.png" alt="React Image" 
-          style={
-            { 
-              width: '100%',
-            }} />
+            {isMobile ? 
+              <Image src={footerLogos2} alt="imgFt" id="imgFt" 
+                style={{ 
+                  width: '100%',
+                }}
+              />
+            : 
+            <Image src={footerLogos} alt="imgFtMovil" id="imgFtMovil"  
+              style={{ 
+                width: '100%',
+              }} 
+            />}
         <div style={{
           background:'blue',
           height: '40px',
@@ -41,7 +51,7 @@ export function Footer() {
           justifyContent: 'center',
           alignItems: 'center'
         }}>
-            <a
+            <Link
             style={{ color: 'white', fontSize: '17px', textDecoration: 'none' }}
             href={`https://wa.me/5540400202`}
             target="_blank"
@@ -62,7 +72,7 @@ export function Footer() {
                 </>
               )}
                 </p>      
-            </a>    
+            </Link>    
           </div>
       </>
     );

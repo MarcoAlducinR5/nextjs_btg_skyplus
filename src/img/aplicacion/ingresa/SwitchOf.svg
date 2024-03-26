@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="33" viewBox="0 0 59 33">
+  <defs>
+    <filter id="Elipse_4" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#20252e"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Switchof" transform="translate(-50 -476)">
+    <path id="Trazado_66" data-name="Trazado 66" d="M15.5,0h25a15.5,15.5,0,0,1,0,31h-25a15.5,15.5,0,0,1,0-31Z" transform="translate(53 476)" fill="rgba(204,204,204,0.7)"/>
+    <g transform="matrix(1, 0, 0, 1, 50, 476)" filter="url(#Elipse_4)">
+      <circle id="Elipse_4-2" data-name="Elipse 4" cx="13.5" cy="13.5" r="13.5" transform="translate(5 2)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

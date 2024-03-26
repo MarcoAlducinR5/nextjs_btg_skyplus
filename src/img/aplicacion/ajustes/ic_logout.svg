@@ -1,0 +1,11 @@
+<svg id="ic_logout" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_397" data-name="Rectángulo 397" width="20" height="20" fill="none" stroke="#fff" stroke-width="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="Artwork_2" data-name="Artwork 2" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Trazado_1027" data-name="Trazado 1027" d="M11.907,10.916a.708.708,0,0,0,.708-.8V2.508a.708.708,0,1,0-1.416,0V10.12a.708.708,0,0,0,.708.8" transform="translate(-1.759 -0.679)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+    <path id="Trazado_1028" data-name="Trazado 1028" d="M3.721,6.986a8.585,8.585,0,1,0,10.887-3.1.62.62,0,0,0-.8.266.62.62,0,0,0,.266.8,7.258,7.258,0,1,1-6.284,0,.62.62,0,0,0,.266-.8L7.7,3.8H7.173a8.585,8.585,0,0,0-3.54,3.1" transform="translate(-0.742 -0.909)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+  </g>
+</svg>
