@@ -2,6 +2,18 @@
 
 import styled from "styled-components";
 import Link from 'next/link';
+import localFont from 'next/font/local';
+
+const Nunito = localFont({
+  src: [
+    {
+      path: '../fonts/Nunito-ottf/Nunito-Light.ttf',
+      weight: 'normal',
+      style: 'normal',
+    }
+  ],
+  
+});
 
 /* ==== BOTON ROSA ==== */
 export const Btn_btg_sports_1 = styled.button`
@@ -215,7 +227,7 @@ export const Btn_btg_sports_5 = styled.button`
 
 /* ==== BOTON BLANCO PANTALLAS EXTERNAS ==== */
 export const Btn_btg_sports_6 = styled.button`
-
+    ${Nunito};
     /*font-weight: 500 ;*/
     border-radius: 48px ;
     -webkit-border-radius: 5px ;

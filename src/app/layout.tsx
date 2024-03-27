@@ -6,21 +6,21 @@ import localFont from 'next/font/local';
 
 const SkyText = localFont({
   src: [
-    /* {
+    {
       path: '../fonts/SkyText/SkyText.ttf',
       weight: 'normal',
       style: 'normal',
-    },
+    }/* ,
     {
       path: '../fonts/Open_Sans/OpenSans-Regular.ttf',
       weight: 'normal',
       style: 'normal',
-    }, */
+    },
     {
       path: '../fonts/Nunito-ottf/Nunito-Light.ttf',
       weight: 'normal',
       style: 'normal',
-    }
+    } */
   ],
   
 });
